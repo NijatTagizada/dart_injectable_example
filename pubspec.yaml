@@ -1,0 +1,19 @@
+name: dart_injectable_example
+description: A sample injectable application.
+version: 1.0.0
+
+environment:
+  sdk: '>=2.14.3 <3.0.0'
+
+
+dependencies:
+  injectable: ^1.5.0
+  dio: ^4.0.4
+  retrofit: ^3.0.0
+
+dev_dependencies:
+  lints: ^1.0.0
+  retrofit_generator: any
+  injectable_generator:  
+  build_runner:
+
