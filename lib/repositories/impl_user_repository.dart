@@ -10,11 +10,13 @@ class ImplUserRepository implements IUserRepository {
   Future<String> getUsers() async {
     try {
       print('Getting data...\n');
-
+      
       ApiServices services = locator.get();
       await services.users();
       return Future.value('Success');
     } on DioError catch (_) {
+      return Future.value('Failure');
+    } catch (e) {
       return Future.value('Failure');
     }
   }
